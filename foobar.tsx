@@ -19,6 +19,16 @@ function List<T>({ items, renderItem, onItemClick }: ListProps<T>) {
           {renderItem(item, index)}
         </li>
       ))}
+
+      <div>
+        one level up
+        <div>
+          nested
+          <div>
+            one level down
+          </div>
+        </div>
+      </div>
     </ul>
   );
 }
